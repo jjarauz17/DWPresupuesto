@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.0.2_GRMSQL2014.DWPresupuesto.jarauz"
+  DTS:DTSID="{8867F1E4-A618-4770-BA61-A567CBF7E5CF}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=192.168.0.2\GRMSQL2014;User ID=jarauz;Initial Catalog=DWPresupuesto;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOrlwIpKt5UK24M12zlGttAAAAAACAAAAAAAQZgAAAAEAACAAAADR0gpiI/PEQz7zVEOG1Ch4AVuAKWCzpEhqS3jc3ViHVQAAAAAOgAAAAAIAACAAAAA5T50irhMGF8laFMhvE89OlCTkPomIgYnexp6O4T1R5IAAAABIGnRanihPn8yr7q3pY6Krs6FKj7LzGfbU0xxi7OES+Y44g1LonCy8EERBKgEn7r9ZJixhFj407GtXdTZ2RCwKoLjrYukUFUXkdkNePlyB6oskeN8vekhMES1dbmsb5jgbd5Xeq4RD4nbtDQYfegd8CI+WD+h08PvIGDqDJrHO3EAAAAArnjRPZOq2o+Wg5NDLHWHAaYTBVTopYY5xzx8Qql324GWARn7f8ssmj6S9fJMA+Sol6HNYEEw7IVWNR/hrMBMc</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

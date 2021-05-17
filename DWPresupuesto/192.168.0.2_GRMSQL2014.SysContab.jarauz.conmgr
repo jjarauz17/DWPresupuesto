@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.0.2_GRMSQL2014.SysContab.jarauz"
+  DTS:DTSID="{8426065A-81A2-4414-94E2-18204DF5C0B0}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=192.168.0.2\GRMSQL2014;User ID=jarauz;Initial Catalog=SysContab;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOrlwIpKt5UK24M12zlGttAAAAAACAAAAAAAQZgAAAAEAACAAAAB5JxceZQB0p8AE0C7zUlJUMrjGro5ukCb6ql5Emk1MFQAAAAAOgAAAAAIAACAAAAAhLXXvknznSV5Kqn3YcbGLgEgjUfqnk5FmlF3RDUCQkoAAAAAhZvu1f2SLqeu71YERgBNsENvsr3YMOy9ql3AGQzVPdn/FfO6BjDQY0TtalRWDMtyZmzP19nikPuvOk/o1b+qiT6eVR+sfsSVSPWTJnR1irqJKfwpLL3dHk5HILFhY6QsY0xJaOw7g4tSQIGqkkyhTK7/RaLLIPYjweVIrqkdiJ0AAAAC972TCM4li2Wy6W3vvPqNCRnFaMjxc+skLlGkPtIevyG99dDV9Q8aceLWDJTittm59EloxLqGqIAMlTZMKYsFw</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
