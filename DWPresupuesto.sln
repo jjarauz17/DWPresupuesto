@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "DWPresupuesto", "DWPresupuesto\DWPresupuesto.dtproj", "{BE1928E8-177F-42E9-B645-C16E6C916504}"
 EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "CUBOPresupuesto", "CUBOPresupuesto\CUBOPresupuesto.dwproj", "{A751E3B6-2E95-4ADA-8A71-B208F7A80397}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -12,6 +14,9 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BE1928E8-177F-42E9-B645-C16E6C916504}.Development|Default.ActiveCfg = Development
 		{BE1928E8-177F-42E9-B645-C16E6C916504}.Development|Default.Build.0 = Development
+		{A751E3B6-2E95-4ADA-8A71-B208F7A80397}.Development|Default.ActiveCfg = Development
+		{A751E3B6-2E95-4ADA-8A71-B208F7A80397}.Development|Default.Build.0 = Development
+		{A751E3B6-2E95-4ADA-8A71-B208F7A80397}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
