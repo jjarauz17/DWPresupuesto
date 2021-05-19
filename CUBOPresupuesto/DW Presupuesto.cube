@@ -455,4 +455,33 @@ VISIBLE = 1 ,  DISPLAY_FOLDER = 'Medidas DWPresupuesto'  ; </Text>
       </Commands>
     </MdxScript>
   </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="9573bc76-4d29-4a15-84e6-d1dfa1aaa93f">
+      <ID>KPI</ID>
+      <Name>KPI OBJETIVO VENTA</Name>
+      <Value>[Measures].[TOTAL PRESUPUESTO]</Value>
+      <Goal>[Measures].[TOTAL PRESUPUESTO] &gt;= [Measures].[TOTAL REAL]</Goal>
+      <Status>CASE 
+    WHEN KPIVALUE("KPI OBJETIVO VENTA") &gt;= KPIGOAL("KPI OBJETIVO VENTA")
+        THEN 1
+    WHEN KPIVALUE("KPI OBJETIVO VENTA") &lt; KPIGOAL("KPI OBJETIVO VENTA")
+        THEN 0
+    ELSE -1 
+END
+</Status>
+      <Trend>CASE  
+  WHEN IsEmpty(PARALLELPERIOD([Dim Tiempo].[Año-Trimestre-Mes].[Año],1,[Dim Tiempo].[Año-Trimestre-Mes].CurrentMember))  
+    THEN 0  
+  WHEN [Measures].[TOTAL PRESUPUESTO] &gt;  
+    (PARALLELPERIOD([Dim Tiempo].[Año-Trimestre-Mes].[Año],1,[Dim Tiempo].[Año-Trimestre-Mes].CurrentMember), [Measures].[TOTAL PRESUPUESTO])  
+    THEN 1  
+  WHEN [Measures].[PUTILIDAD] =  
+    (PARALLELPERIOD([Dim Tiempo].[Año-Trimestre-Mes].[Año],1,[Dim Tiempo].[Año-Trimestre-Mes].CurrentMember), [Measures].[TOTAL PRESUPUESTO])  
+    THEN 0  
+  ELSE -1  
+END</Trend>
+      <TrendGraphic>Smiley Face</TrendGraphic>
+      <StatusGraphic>Traffic Light</StatusGraphic>
+    </Kpi>
+  </Kpis>
 </Cube>
